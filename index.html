@@ -16,6 +16,7 @@
 		});
 	</script>
 	<script src="http://code.jquery.com/mobile/1.2.0-alpha.1/jquery.mobile-1.2.0-alpha.1.min.js"></script>
+	<script src="script.js"></script>
 </head> 
 <body> 
 
@@ -36,6 +37,7 @@
 		<div class="whiteline"></div>
 		<a class="playerpos" href="#pop-x" data-rel="popup" id="pos-x">X</a>
 			<div data-role="popup" data-overlay-theme="a" data-position-to="window" class="ui-content" id="pop-x">
+				<h2>Wide reciever</h2><br />
 				<ul data-role="listview">
 					<li><a href="#player?player=jerry-johnson"><h1><span class="ui-li-count">#9</span> Jerry Johnson</h1></a></li>
 					<li><a href="#player?player=tyler-scott">Tyler Scott</a></li>
@@ -70,6 +72,22 @@
 				<li><a href="#defense" data-transition="none" class="ui-btn-active ui-state-persist">Defense</a></li>
 			</ul>
 		</div><!-- /navbar -->
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<p>Page content goes here.</p>	
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>&copy 2012 <a href="http://dailybruin.com">Daily Bruin</a></h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+
+<div data-role="page" id="player" data-add-back-btn="true">
+
+	<div data-role="header">
+		<h1>Player info</h1>
 	</div><!-- /header -->
 
 	<div data-role="content">	
