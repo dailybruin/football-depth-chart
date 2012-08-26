@@ -1,2 +1,69 @@
 [data-role="footer"] {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+.football-field {
+    background-image: url('img/field-back.png');
+    min-height: 313px;
+    position:relative;
+}
+.whiteline {
+	height:3px;
+	width:100%;
+	background-color:white;
+	margin-left:-15px;
+	padding-right: 30px;
+    position: absolute;
+    bottom: 88px;
+}
+.whiteline:first-child {
+	position:auto;
+	bottom:auto;
+    margin-bottom: 100px;
+    height:5px;
+}
+.ui-content a.playerpos {
+	display: block;
+	position: absolute;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 40px;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	font-size: 1.3em;
+	margin-top: 0;
+	padding-top: 12px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	text-decoration:none;
+}
+.ui-content a.playerpos:hover {
+	color:white;
+	cursor:pointer;
+}
+#pos-x {
+    top: 12%;
+    left: 1%;
+}
+#pos-lt {
+    top: 12%;
+    left: 25%;
+}
+#pos-lg {
+    top: 12%;
+    left: 37%;
+}
+#pos-oc {
+    top: 12%;
+    left: 48%;
+}
+#pos-rg {
+    top: 12%;
+    left: 58%;
+}
+#pos-rt {
+    top: 12%;
+    left: 68%;
 }

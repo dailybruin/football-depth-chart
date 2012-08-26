@@ -25,15 +25,34 @@
 		<h1>Depth chart</h1>
 		<div data-role="navbar">
 			<ul>
-				<li><a href="#offense" data-transition="none" class="ui-btn-active">Offense</a></li>
+				<li><a href="#offense" data-transition="none" class="ui-btn-active ui-state-persist">Offense</a></li>
 				<li><a href="#defense" data-transition="none">Defense</a></li>
 			</ul>
 		</div><!-- /navbar -->
 	</div><!-- /header -->
 
-	<div data-role="content">	
-		<p>Page content goes here.</p>	
-		<a href="#page2" >click</a>	
+	<div data-role="content" class="football-field">	
+		<div class="whiteline"></div>
+		<div class="whiteline"></div>
+		<a class="playerpos" href="#pop-x" data-rel="popup" id="pos-x">X</a>
+			<div data-role="popup" data-overlay-theme="a" data-position-to="window" class="ui-content" id="pop-x">
+				<ul data-role="listview">
+					<li><a href="#player?player=jerry-johnson"><h1><span class="ui-li-count">#9</span> Jerry Johnson</h1></a></li>
+					<li><a href="#player?player=tyler-scott">Tyler Scott</a></li>
+					<li><a href="#player?player=logan-sweet">Logan Sweet</a></li>
+				</ul>
+			</div>
+		<a class="playerpos" href="#" data-rel="popup" id="pos-lt">LT</a>
+		<a class="playerpos" href="#" data-rel="popup" id="pos-lg">LG</a>
+		<a class="playerpos" href="#" data-rel="popup" id="pos-oc">OC</a>
+		<a class="playerpos" href="#" data-rel="popup" id="pos-rg">RG</a>
+		<a class="playerpos" href="#" data-rel="popup" id="pos-rt">RT</a>
+		<a class="playerpos" href="#" data-rel="popup" id="pos-y">Y</a>
+		<a class="playerpos" href="#" data-rel="popup" id="pos-f">F</a>
+		<a class="playerpos" href="#" data-rel="popup" id="pos-qb">QB</a>
+		<a class="playerpos" href="#" data-rel="popup" id="pos-fb">FB</a>
+		<a class="playerpos" href="#" data-rel="popup" id="pos-tb">TB</a>
+		<a class="playerpos" href="#" data-rel="popup" id="pos-z">Z</a>
 	</div><!-- /content -->
 
 	<div data-role="footer">
@@ -48,7 +67,7 @@
 		<div data-role="navbar">
 			<ul>
 				<li><a href="#offense" data-transition="none">Offense</a></li>
-				<li><a href="#defense" data-transition="none" class="ui-btn-active">Defense</a></li>
+				<li><a href="#defense" data-transition="none" class="ui-btn-active ui-state-persist">Defense</a></li>
 			</ul>
 		</div><!-- /navbar -->
 	</div><!-- /header -->
@@ -57,7 +76,7 @@
 		<p>Page content goes here.</p>	
 	</div><!-- /content -->
 
-	<div data-role="footer" data-theme="d">
+	<div data-role="footer">
 		<h4>&copy 2012 <a href="http://dailybruin.com">Daily Bruin</a></h4>
 	</div><!-- /footer -->
 </div><!-- /page -->
