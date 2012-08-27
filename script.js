@@ -47,7 +47,6 @@ function showPlayer( urlObj, options )
 		// Get and parse the JSON with player data
 		playerInfo = $.parseJSON(data);
 		playerObj = getPlayer(playerInfo, playerName);
-		console.log(playerObj);
 		
 		// Extract first and last name from input string
 		firstNamePattern = new RegExp("^[^-]+","gi");
@@ -59,8 +58,6 @@ function showPlayer( urlObj, options )
 		// the DOM. The id of the page we are going to write our
 		// content into is specified in the hash before the '?'.
 		pageSelector = urlObj.hash.replace( /\?.*$/, "" );
-		console.log(pageSelector);
-	
 	
 		// Get the page we are going to dump our content into.
 		var $page = $( pageSelector );
@@ -80,14 +77,12 @@ function showPlayer( urlObj, options )
 			markup += "</ul>";
 		}
 
-
 		// Inject the category items markup into the content element.
 		$content.html( markup );
 		
 		// Find the h1 element in our header and inject the name of
 		// the category into it.
 		$header.find( "h1" ).html( playerObj["name"] );
-
 
 		// Pages are lazily enhanced. We call page() on the page
 		// element to make sure it is always enhanced before we
@@ -109,30 +104,4 @@ function showPlayer( urlObj, options )
 		// the page we just modified.
 		$.mobile.changePage( $page, options );
 	});
-
-
-/*
-	if ( category ) {
-
-
-			// The markup we are going to inject into the content
-			// area of the page.
-			markup = "<p>" + category.description + "</p><ul data-role='listview' data-inset='true'>",
-
-			// The array of items for this category.
-			cItems = category.items,
-
-			// The number of items in the category.
-			numItems = cItems.length;
-
-		// Generate a list item for each item in the category
-		// and add it to our markup.
-		for ( var i = 0; i < numItems; i++ ) {
-			markup += "<li>" + cItems[i].name + "</li>";
-		}
-		markup += "</ul>";
-
-
-	}
-*/
 }
