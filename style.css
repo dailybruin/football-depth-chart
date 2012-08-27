@@ -52,43 +52,43 @@
 }
 #pos-lt {
     top: 12%;
-    left: 25%;
+    left: 23%;
 }
 #pos-lg {
     top: 12%;
-    left: 37%;
+    left: 35%;
 }
-#pos-oc {
+#pos-c {
     top: 12%;
-    left: 48%;
+    left: 46%;
 }
 #pos-rg {
     top: 12%;
-    left: 58%;
+    left: 56%;
 }
 #pos-rt {
     top: 12%;
-    left: 68%;
+    left: 66%;
 }
 #pos-y {
     top: 12%;
-    left: 88%;
+    right: 5%;
 }
 #pos-f {
-    top: 34%;
+    top: 27%;
     left: 13%;
 }
 #pos-qb {
-    top: 55%;
+    top: 46%;
     left: 48%;
 }
 #pos-tb {
-    top: 55%;
+    top: 46%;
     left: 58%;
 }
 #pos-z {
-    top: 34%;
-    left: 94%;
+    top: 27%;
+    right: 3%;
 }
 #pos-fb {
     top: 76%;
