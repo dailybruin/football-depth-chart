@@ -1,6 +1,10 @@
 $(document).bind('pageinit', function() {
 });
 
+$(window).hashchange( function(){
+    _gaq.push(['_trackPageview',location.pathname + location.search  + location.hash]);
+});
+
 
 // Return a player object with a player name
 function getPlayer(players, name) {
