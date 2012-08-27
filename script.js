@@ -1,10 +1,4 @@
 $(document).bind('pageinit', function() {
-	$('#backButton').click(function(e) {
-		$.mobile.changePage.defaults.transition = 'slide';
-		history.back();
-		e.preventDefault();
-	});
-	
 });
 
 
@@ -119,5 +113,11 @@ function showPlayer( urlObj, options )
 		// Now call changePage() and tell it to switch to
 		// the page we just modified.
 		$.mobile.changePage( $page, options );
+		
+		// remove broken images
+		$('img').error(function() {
+	  		$(this).remove();
+		});
+
 	});
 }

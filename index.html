@@ -14,6 +14,7 @@
 				defaultPageTransition: "slide"
 			});
 			$.mobile.page.prototype.options.addBackBtn = true;
+			$.mobile.changePage.defaults.transition = 'slide';
 		});
 	</script>
 	<script src="http://code.jquery.com/mobile/1.2.0-alpha.1/jquery.mobile-1.2.0-alpha.1.min.js"></script>
@@ -344,10 +345,10 @@
 
 
 
-<div data-role="page" id="player-info" data-add-back-btn="false">
+<div data-role="page" id="player-info" data-add-back-btn="true">
 
 	<div data-role="header">
-		<a href="#" data-icon="arrow-l" data-direction="reverse" id="backButton" data-transition="slide">Back</a>
+<!-- 		<a href="#" data-icon="arrow-l" data-direction="reverse" id="backButton" data-transition="slide">Back</a> -->
 		<h1>Player info</h1>
 	</div><!-- /header -->
 
