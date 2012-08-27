@@ -1,8 +1,10 @@
 [data-role="footer"] {
+/*
 	position: absolute;
 	bottom: 0;
 	width: 100%;
 	bottom:-20px;
+*/
 }
 .football-field {
     background-image: url('img/field-back.png');
