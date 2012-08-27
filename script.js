@@ -49,6 +49,12 @@ function showPlayer( urlObj, options )
 		playerObj = getPlayer(playerInfo, playerName);
 		console.log(playerObj);
 		
+		// Extract first and last name from input string
+		firstNamePattern = new RegExp("^[^-]+","gi");
+		lastNamePattern = new RegExp("[^-]+$","gi");
+		firstName = firstNamePattern.exec(playerName)[0];
+		lastName = lastNamePattern.exec(playerName)[0];
+		
 		// The pages we use to display our content are already in
 		// the DOM. The id of the page we are going to write our
 		// content into is specified in the hash before the '?'.
@@ -65,8 +71,14 @@ function showPlayer( urlObj, options )
 		// Get the content area element for the page.
 		$content = $page.children( ":jqmData(role=content)" );
 		
-		markup = "<img class='player-info-img' src='img/players/" + playerName.toLowerCase().replace(" ","_") + ".jpg' />";
+		markup = "<img class='player-info-img' src='img/players/" + lastName + "_" + firstName + ".jpg' />";
 		markup += "<p>" + playerObj["bio"] + "</p>";
+		if(playerObj["bullets"]) {
+			markup += "<ul>";
+				for (bulletInfo in playerObj["bullets"])
+					markup += "<li>" + playerObj["bullets"][bulletInfo] + "</li>";
+			markup += "</ul>";
+		}
 
 
 		// Inject the category items markup into the content element.
