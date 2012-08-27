@@ -1,5 +1,5 @@
 {
-  "date-generated" : "August 26, 2012, 3 a.m.",
+  "date-generated" : "August 26, 2012, 11 p.m.",
   "players" : [
     {
       "bio" : "Because the Bruins had a deep veteran receiving corp last season, the coaching staff opted to redshirt Lucien. Much of that group graduated in June, making way for Lucien to come in and make an impact right away. Lucien figures to come in as the first wideout off of the bench with the possibility of starting.",
@@ -629,7 +629,7 @@
       "name" : "Iuta Tepa"
     },
     {
-      "bio" : "Damien Thigpen",
+      "bio" : "For Thigpen, staying healthy has been an issue throughout his UCLA career. He had an impressive season as a true freshman in 2009, with big plays running and catching the ball as well as solid special teams play. Since then, a shoulder injury cut his 2010 season short and a nagging groin injury kept him from seeing the field in 2011, leading to a redshirt year. After a year away from the field, Thigpen is back and could be used as a dual-threat receiver as well as a return specialist.",
       "bullets" : [
         "In 2009: Rushed 26 times for 62 yards, caught seven passes for 41 yards",
         "Credited with 16 special teams tackles between the 2009 and 2010 seasons"
@@ -781,6 +781,10 @@
         "Had 21 touchbacks off of kickoffs last season"
       ],
       "name" : "Jeff Locke"
+    },
+    {
+      "bio" : "Jake Seydel is a sophomore guard and recently transferred from Riverside college.",
+      "name" : "Jake Seydel"
     }
   ]
 }

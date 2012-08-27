@@ -1,7 +1,12 @@
 function getPlayer(players, name) {
 	name = new RegExp(name.replace('-','.')+'\\s*','gi');
 	for (player in players["players"]) {
-		if(name.test(players["players"][player]["name"]))
+		if( name.test(
+				players["players"][player]["name"]
+					.replace("\u2019","")
+					.replace("'","")
+					.replace("-","")
+					) )
 			return players["players"][player];
 	}
 }

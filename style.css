@@ -68,6 +68,30 @@
     top: 12%;
     left: 68%;
 }
+#pos-y {
+    top: 12%;
+    left: 88%;
+}
+#pos-f {
+    top: 34%;
+    left: 13%;
+}
+#pos-qb {
+    top: 55%;
+    left: 48%;
+}
+#pos-tb {
+    top: 55%;
+    left: 58%;
+}
+#pos-z {
+    top: 34%;
+    left: 94%;
+}
+#pos-fb {
+    top: 76%;
+    left: 48%;
+}
 .player-info-img {
 	float:right;
 	padding-left:8px;
