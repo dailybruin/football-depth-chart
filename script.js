@@ -4,6 +4,7 @@ $(document).bind('pageinit', function() {
 		history.back();
 		e.preventDefault();
 	});
+	
 });
 
 

@@ -13,6 +13,7 @@
 			$.extend(  $.mobile , {
 				defaultPageTransition: "slide"
 			});
+			$.mobile.page.prototype.options.addBackBtn = true;
 		});
 	</script>
 	<script src="http://code.jquery.com/mobile/1.2.0-alpha.1/jquery.mobile-1.2.0-alpha.1.min.js"></script>
@@ -20,7 +21,7 @@
 </head> 
 <body> 
 
-<div data-role="page" id="offense">
+<div data-role="page" id="offense" data-add-back-btn="false">
 
 	<div data-role="header">
 		<h1>Depth chart</h1>
@@ -28,6 +29,7 @@
 			<ul>
 				<li><a href="#offense" data-transition="none" class="ui-btn-active ui-state-persist">Offense</a></li>
 				<li><a href="#defense" data-transition="none">Defense</a></li>
+				<li><a href="#specialists" data-transition="none">Specialists</a></li>
 			</ul>
 		</div><!-- /navbar -->
 	</div><!-- /header -->
@@ -149,14 +151,15 @@
 	</div><!-- /footer -->
 </div><!-- /page -->
 
-<div data-role="page" id="defense">
+<div data-role="page" id="defense" data-add-back-btn="false">
 
 	<div data-role="header">
 		<h1>Depth chart</h1>
 		<div data-role="navbar">
 			<ul>
-				<li><a href="#offense" data-transition="none">Offense</a></li>
-				<li><a href="#defense" data-transition="none" class="ui-btn-active ui-state-persist">Defense</a></li>
+				<li><a href="#offense" data-transition="none" class="ui-btn-active ui-state-persist">Offense</a></li>
+				<li><a href="#defense" data-transition="none">Defense</a></li>
+				<li><a href="#specialists" data-transition="none">Specialists</a></li>
 			</ul>
 		</div><!-- /navbar -->
 	</div><!-- /header -->
@@ -271,8 +274,44 @@
 	</div><!-- /footer -->
 </div><!-- /page -->
 
+<div data-role="page" id="specialists" data-add-back-btn="false">
 
-<div data-role="page" id="player-info">
+	<div data-role="header">
+		<h1>Depth chart</h1>
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#offense" data-transition="none">Offense</a></li>
+				<li><a href="#defense" data-transition="none">Defense</a></li>
+				<li><a href="#specialists" data-transition="none" class="ui-btn-active ui-state-persist">Specialists</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<ul data-role="listview" >
+			<li>Place kicker
+				<ul data-role="listview">
+					<li><a href="#player-info?player=kaimi-fairbairn"><span class="ui-li-count">#15</span> Ka'imi Fairbairn</a></li>
+				<li><a href="#player-info?player=justin-moreno"><span class="ui-li-count">#17</span> Justin Moreno</a></li>
+				</ul>
+			</li>
+			<li>Kickoff</li>
+			<li>Punter</li>
+			<li>Long snapper</li>
+			<li>Holder</li>
+			<li>Punt return</li>
+			<li>Kickoff return</li>
+		</ul>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>&copy 2012 <a href="http://dailybruin.com">Daily Bruin</a></h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+
+
+<div data-role="page" id="player-info" data-add-back-btn="false">
 
 	<div data-role="header">
 		<a href="#" data-icon="arrow-l" data-direction="reverse" id="backButton" data-transition="slide">Back</a>
