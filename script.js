@@ -1,3 +1,13 @@
+$(document).bind('pageinit', function() {
+	$('#backButton').click(function(e) {
+		$.mobile.changePage.defaults.transition = 'slide';
+		history.back();
+		e.preventDefault();
+	});
+});
+
+
+// Return a player object with a player name
 function getPlayer(players, name) {
 	name = new RegExp(name.replace('-','.')+'\\s*','gi');
 	for (player in players["players"]) {

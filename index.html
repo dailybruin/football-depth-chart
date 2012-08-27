@@ -161,8 +161,29 @@
 		</div><!-- /navbar -->
 	</div><!-- /header -->
 
-	<div data-role="content">	
-		<p>Page content goes here.</p>	
+	<div data-role="content" class="football-field">	
+		<div class="whiteline"></div>
+		<div class="whiteline"></div>
+		
+		<a class="playerpos" href="#pop-le" data-rel="popup" id="pos-le">LE</a>
+			<div data-role="popup" data-overlay-theme="a" data-position-to="window" class="ui-content" id="pop-le">
+				<h2>Left end</h2><br />
+				<ul data-role="listview">
+					<li><a href="#player-info?player=datone-jones"><h1><span class="ui-li-count">#56</span> Datone Jones</h1></a></li>
+					<li><a href="#player-info?player=owamagbe-odighizuwa"><span class="ui-li-count">#94</span> Owamagbe Odighizuwa</a></li>
+					<li><a href="#player-info?player=ellis-mccarthy"><span class="ui-li-count">#93</span> Ellis McCarthy</a></li>
+				</ul>
+			</div>
+		<a class="playerpos" href="#pop-nt" data-rel="popup" id="pos-nt">NT</a>
+		<a class="playerpos" href="#pop-re" data-rel="popup" id="pos-re">RE</a>
+		<a class="playerpos" href="#pop-lolb" data-rel="popup" id="pos-lolb">LOLB</a>
+		<a class="playerpos" href="#pop-lilb" data-rel="popup" id="pos-lilb">LILB</a>
+		<a class="playerpos" href="#pop-rilb" data-rel="popup" id="pos-rilb">RILB</a>
+		<a class="playerpos" href="#pop-rolb" data-rel="popup" id="pos-rolb">ROLB</a>
+		<a class="playerpos" href="#pop-lcb" data-rel="popup" id="pos-lcb">LCB</a>
+		<a class="playerpos" href="#pop-rcb" data-rel="popup" id="pos-rcb">RCB</a>
+		<a class="playerpos" href="#pop-ss" data-rel="popup" id="pos-ss">SS</a>
+		<a class="playerpos" href="#pop-fs" data-rel="popup" id="pos-fs">FS</a>
 	</div><!-- /content -->
 
 	<div data-role="footer">
@@ -174,7 +195,7 @@
 <div data-role="page" id="player-info">
 
 	<div data-role="header">
-		<a href="index.html" data-icon="arrow-l" data-direction="reverse">Back</a>
+		<a href="#" data-icon="arrow-l" data-direction="reverse" id="backButton" data-transition="slide">Back</a>
 		<h1>Player info</h1>
 	</div><!-- /header -->
 

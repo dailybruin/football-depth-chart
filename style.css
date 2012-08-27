@@ -94,6 +94,54 @@
     top: 76%;
     left: 48%;
 }
+#pos-nt {
+    top: 12%;
+    left: 46%;
+}
+#pos-lcb {
+    top: 12%;
+    left: 5%;
+}
+#pos-rcb {
+    top: 12%;
+    right: 5%;
+}
+#pos-le {
+    top: 12%;
+    left: 33%;
+}
+#pos-re {
+    top: 12%;
+    left: 60%;
+}
+#pos-lolb {
+    top: 25%;
+    left: 24%;
+    width: 70px;
+}
+#pos-rolb {
+    top: 25%;
+    width: 70px;
+    left: 66%;
+}
+#pos-lilb {
+    top: 40%;
+    left: 35%;
+    width: 70px;
+}
+#pos-rilb {
+    top: 40%;
+    width: 70px;
+    left: 56%;
+}
+#pos-ss {
+    top: 62%;
+    left: 25%;
+}
+#pos-fs {
+    top: 80%;
+    left: 62%;
+}
 .player-info-img {
 	float:right;
 	padding-left:8px;
