@@ -44,55 +44,38 @@ function showPlayer( urlObj, options )
 	// Because of Javascript's callback structure, the rest of the
 	// showPlayer function must be within this callback
 	$.get('player-data.json', function(data) {
+		// Get and parse the JSON with player data
 		playerInfo = $.parseJSON(data);
 		playerObj = getPlayer(playerInfo, playerName);
-	});
-
-
-		// Get the object that represents the category we
-		// are interested in. Note, that at this point we could
-		// instead fire off an ajax request to fetch the data, but
-		// for the purposes of this sample, it's already in memory.
-/* 		player = window.playerInfo[ playerName ]; */
-
+		console.log(playerObj);
+		
 		// The pages we use to display our content are already in
 		// the DOM. The id of the page we are going to write our
 		// content into is specified in the hash before the '?'.
-		//pageSelector = urlObj.hash.replace( /\?.*$/, "" );
-
-	if ( category ) {
+		pageSelector = urlObj.hash.replace( /\?.*$/, "" );
+		console.log(pageSelector);
+	
+	
 		// Get the page we are going to dump our content into.
-		var $page = $( pageSelector ),
+		var $page = $( pageSelector );
+		
+		// Get the header for the page.
+		$header = $page.children( ":jqmData(role=header)" );
 
-			// Get the header for the page.
-			$header = $page.children( ":jqmData(role=header)" ),
+		// Get the content area element for the page.
+		$content = $page.children( ":jqmData(role=content)" );
+		
+		markup = "<img class='player-info-img' src='img/players/" + playerName.toLowerCase().replace(" ","_") + ".jpg' />";
+		markup += "<p>" + playerObj["bio"] + "</p>";
 
-			// Get the content area element for the page.
-			$content = $page.children( ":jqmData(role=content)" ),
-
-			// The markup we are going to inject into the content
-			// area of the page.
-			markup = "<p>" + category.description + "</p><ul data-role='listview' data-inset='true'>",
-
-			// The array of items for this category.
-			cItems = category.items,
-
-			// The number of items in the category.
-			numItems = cItems.length;
-
-		// Generate a list item for each item in the category
-		// and add it to our markup.
-		for ( var i = 0; i < numItems; i++ ) {
-			markup += "<li>" + cItems[i].name + "</li>";
-		}
-		markup += "</ul>";
-
-		// Find the h1 element in our header and inject the name of
-		// the category into it.
-		$header.find( "h1" ).html( category.name );
 
 		// Inject the category items markup into the content element.
 		$content.html( markup );
+		
+		// Find the h1 element in our header and inject the name of
+		// the category into it.
+		$header.find( "h1" ).html( playerObj["name"] );
+
 
 		// Pages are lazily enhanced. We call page() on the page
 		// element to make sure it is always enhanced before we
@@ -113,5 +96,31 @@ function showPlayer( urlObj, options )
 		// Now call changePage() and tell it to switch to
 		// the page we just modified.
 		$.mobile.changePage( $page, options );
+	});
+
+
+/*
+	if ( category ) {
+
+
+			// The markup we are going to inject into the content
+			// area of the page.
+			markup = "<p>" + category.description + "</p><ul data-role='listview' data-inset='true'>",
+
+			// The array of items for this category.
+			cItems = category.items,
+
+			// The number of items in the category.
+			numItems = cItems.length;
+
+		// Generate a list item for each item in the category
+		// and add it to our markup.
+		for ( var i = 0; i < numItems; i++ ) {
+			markup += "<li>" + cItems[i].name + "</li>";
+		}
+		markup += "</ul>";
+
+
 	}
+*/
 }
