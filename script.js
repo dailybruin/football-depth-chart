@@ -59,7 +59,7 @@ function showPlayer( urlObj, options )
 	// showPlayer function must be within this callback
 	$.get('player-data.json?time=1377778882', function(data) {
 		// Get the JSON with player data
-        playerInfo = data;
+	        var playerInfo = $.parseJSON(data);
 		playerObj = getPlayer(playerInfo, playerName);
 		
 		// Extract first and last name from input string
