@@ -16,13 +16,6 @@
 			$.mobile.page.prototype.options.addBackBtn = true;
 			$.mobile.changePage.defaults.transition = 'slide';
 		});
-        
-        // Prompt to visit new version
-        $(document).ready(function(){
-            var r = confirm("This chart is not being updated. Visit the newest chart?");
-            if (r == true)
-                window.location="graphics.dailybruin.com/football";
-        });        
 	</script>
 	<script src="http://code.jquery.com/mobile/1.2.0-alpha.1/jquery.mobile-1.2.0-alpha.1.min.js"></script>
 	<script src="jquery-hashchange.min.js"></script>
@@ -49,7 +42,7 @@
 <div data-role="page" id="offense" data-add-back-btn="false">
 
 	<div data-role="header">
-		<h1>2012 Depth chart</h1>
+		<h1>2013 Depth chart</h1>
 		<div data-role="navbar">
 			<ul>
 				<li><a href="#offense" data-transition="none" class="ui-btn-active ui-state-persist">Offense</a></li>
@@ -66,17 +59,17 @@
 			<div data-role="popup" data-overlay-theme="a" data-position-to="window" class="ui-content" id="pop-x">
 				<h2>X receiver</h2><br />
 				<ul data-role="listview">
-					<li><a href="#player-info?player=jerry-johnson"><h1><span class="ui-li-count">#9</span> Jerry Johnson</h1></a></li>
-					<li><a href="#player-info?player=tyler-scott"><span class="ui-li-count">#81</span> Tyler Scott</a></li>
-					<li><a href="#player-info?player=logan-sweet"><span class="ui-li-count">#86</span> Logan Sweet</a></li>
+					<li><a href="#player-info?player=jordan-payton"><h1><span class="ui-li-count">#9</span> Jordan Payton</h1></a></li>
+					<li><a href="#player-info?player=devin-lucien"><span class="ui-li-count">#15</span> Devin Lucien</a></li>
+					<li><a href="#player-info?player=eldridge-massington"><span class="ui-li-count">#82</span> Eldridge Massington</a></li>
 				</ul>
 			</div>
 		<a class="playerpos" href="#pop-lt" data-rel="popup" id="pos-lt">LT</a>
 			<div data-role="popup" data-overlay-theme="a" data-position-to="window" class="ui-content" id="pop-lt">
 				<h2>Left tackle</h2><br />
 				<ul data-role="listview">
-					<li><a href="#player-info?player=torian-white"><h1><span class="ui-li-count">#77</span> Torian White</h1></a></li>
-					<li><a href="#player-info?player=xavier-suafilo"><span class="ui-li-count">#56</span> Xavier Su'a-Filo</a></li>
+					<li><a href="#player-info?player=simon-goines"><h1><span class="ui-li-count">#70</span> Simon Goines</h1></a></li>
+					<li><a href="#player-info?player=conor-mcdermott"><span class="ui-li-count">#68</span> Conor McDermott</a></li>
 				</ul>
 			</div>
 		<a class="playerpos" href="#pop-lg" data-rel="popup" id="pos-lg">LG</a>
@@ -84,7 +77,7 @@
 				<h2>Left guard</h2><br />
 				<ul data-role="listview">
 					<li><a href="#player-info?player=xavier-suafilo"><h1><span class="ui-li-count">#56</span> Xavier Su'a-Filo</h1></a></li>
-					<li><a href="#player-info?player=greg-capella"><h1><span class="ui-li-count">#64</span> Greg Capella</h1></a></li>
+					<li><a href="#player-info?player=kenny-lacy"><h1><span class="ui-li-count">#76</span> Kenny Lacy</h1></a></li>
 				</ul>
 			</div>
 		<a class="playerpos" href="#pop-c" data-rel="popup" id="pos-c">C</a>
@@ -92,32 +85,32 @@
 				<h2>Center</h2><br />
 				<ul data-role="listview">
 					<li><a href="#player-info?player=jake-brendel"><h1><span class="ui-li-count">#54</span> Jake Brendel</h1></a></li>
-					<li><a href="#player-info?player=tre-hale"><span class="ui-li-count">#51</span> Tre' Hale</a></li>
+					<li><a href="#player-info?player=scott-quessenberry"><span class="ui-li-count">#52</span> Scott Quessenberry</a></li>
 				</ul>
 			</div>
 		<a class="playerpos" href="#pop-rg" data-rel="popup" id="pos-rg">RG</a>
 			<div data-role="popup" data-overlay-theme="a" data-position-to="window" class="ui-content" id="pop-rg">
 				<h2>Right guard</h2><br />
 				<ul data-role="listview">
-					<li><a href="#player-info?player=jeff-baca"><h1><span class="ui-li-count">#60</span> Jeff Baca</h1></a></li>
-					<li><a href="#player-info?player=brett-downey"><span class="ui-li-count">#78</span> Brett Downey</a></li>
+					<li><a href="#player-info?player=caleb-benenoch"><h1><span class="ui-li-count">#74</span> Caleb Benenoch</h1></a></li>
+					<li><a href="#player-info?player=alex-redmond"><span class="ui-li-count">#51</span> Alex Redmond</a></li>
 				</ul>
 			</div>
 		<a class="playerpos" href="#pop-rt" data-rel="popup" id="pos-rt">RT</a>
 			<div data-role="popup" data-overlay-theme="a" data-position-to="window" class="ui-content" id="pop-rt">
 				<h2>Right tackle</h2><br />
 				<ul data-role="listview">
-					<li><a href="#player-info?player=simon-goines"><h1><span class="ui-li-count">#70</span> Simon Goines</h1></a></li>
-					<li><a href="#player-info?player=brett-downey"><span class="ui-li-count">#78</span> Brett Downey</a></li>
+					<li><a href="#player-info?player=torian-white"><h1><span class="ui-li-count">#77</span> Torian White</h1></a></li>
+					<li><a href="#player-info?player=ben-wysocki"><span class="ui-li-count">#55</span> Ben Wysocki</a></li>
 				</ul>
 			</div>
 		<a class="playerpos" href="#pop-y" data-rel="popup" id="pos-y">Y</a>
 			<div data-role="popup" data-overlay-theme="a" data-position-to="window" class="ui-content" id="pop-y">
 				<h2>Y receiver</h2><br />
 				<ul data-role="listview">
-					<li><a href="#player-info?player=joseph-fauria"><h1><span class="ui-li-count">#8</span> Joseph Fauria</h1></a></li>
-					<li><a href="#player-info?player=darius-bell"><span class="ui-li-count">#3</span> Darius Bell</a></li>
-					<li><a href="#player-info?player=devin-fuller"><span class="ui-li-count">#2</span> Devin Fuller</a></li>
+					<li><a href="#player-info?player=darius-bell"><h1><span class="ui-li-count">#3</span> Darius Bell</h1></a></li>
+					<li><a href="#player-info?player=grayson-mazzone"><span class="ui-li-count">#83</span> Grayson Mazzone</a></li>
+					<li><a href="#player-info?player=thomas-duarte"><span class="ui-li-count">#18</span> Thomas Duarte</a></li>
 
 				</ul>
 			</div>
@@ -125,9 +118,9 @@
 			<div data-role="popup" data-overlay-theme="a" data-position-to="window" class="ui-content" id="pop-f">
 				<h2>F receiver</h2><br />
 				<ul data-role="listview">
-					<li><a href="#player-info?player=steven-manfro"><h1><span class="ui-li-count">#33</span> Steven Manfro</h1></a></li>
-					<li><a href="#player-info?player=kenny-walker"><span class="ui-li-count">#21</span> Kenny Walker</a></li>
-					<li><a href="#player-info?player=jordon-james"><span class="ui-li-count">#6</span> Jordon James</a></li>
+					<li><a href="#player-info?player=devin-fuller"><h1><span class="ui-li-count">#7</span> Devin Fuller</h1></a></li>
+					<li><a href="#player-info?player=jalen-ortiz"><span class="ui-li-count">#8</span> Jalen Ortiz</a></li>
+					<li><a href="#player-info?player=ahmaad-harris"><span class="ui-li-count">#26</span> Ahmaad Harris</a></li>
 
 				</ul>
 			</div>
@@ -136,17 +129,17 @@
 				<h2>Quarterback</h2><br />
 				<ul data-role="listview">
 					<li><a href="#player-info?player=brett-hundley"><h1><span class="ui-li-count">#17</span> Brett Hundley</h1></a></li>
-					<li><a href="#player-info?player=richard-brehaut"><span class="ui-li-count">#12</span> Richard Brehaut</a></li>
 					<li><a href="#player-info?player=jerry-neuheisel"><span class="ui-li-count">#11</span> Jerry Neuheisel</a></li>
-					<li><a href="#player-info?player=kevin-prince"><span class="ui-li-count">#4</span> Kevin Prince</a></li>
+					<li><a href="#player-info?player=mike-fafaul"><span class="ui-li-count">#12</span> Mike Fafaul</a></li>
+					<li><a href="#player-info?player=asiantii-woulard"><span class="ui-li-count">#2</span> Asiantii Woulard</a></li>
 				</ul>
 			</div>
 		<a class="playerpos" href="#pop-fb" data-rel="popup" id="pos-fb">FB</a>
 			<div data-role="popup" data-overlay-theme="a" data-position-to="window" class="ui-content" id="pop-fb">
 				<h2>Fullback</h2><br />
 				<ul data-role="listview">
-					<li><a href="#player-info?player=david-allen"><h1><span class="ui-li-count">#41</span> David Allen</h1></a></li>
-					<li><a href="#player-info?player=phillip-ruhl"><span class="ui-li-count">#44</span> Phillip Ruhl</a></li>
+					<li><a href="#player-info?player=phillip-ruhl"><h1><span class="ui-li-count">#44</span> Phillip Ruhl</h1></a></li>
+					<li><a href="#player-info?player=nate-iese"><span class="ui-li-count">#32</span> Nate Iese</a></li>
 					<li><a href="#player-info?player=luke-gane"><span class="ui-li-count">#49</span> Luke Gane</a></li>
 				</ul>
 			</div>
@@ -154,9 +147,9 @@
 			<div data-role="popup" data-overlay-theme="a" data-position-to="window" class="ui-content" id="pop-tb">
 				<h2>Tailback</h2><br />
 				<ul data-role="listview">
-					<li><a href="#player-info?player=johnathan-franklin"><h1><span class="ui-li-count">#23</span> Johnathan Franklin</h1></a></li>
-					<li><a href="#player-info?player=jordon-james"><span class="ui-li-count">#6</span> Jordon James</a></li>
-					<li><a href="#player-info?player=damien-thigpen"><span class="ui-li-count">#25</span> Damien Thigpen</a></li>
+					<li><a href="#player-info?player=jordon-james"><h1><span class="ui-li-count">#6</span> Jordon James</h1></a></li>
+					<li><a href="#player-info?player=steven-manfro"><span class="ui-li-count">#33</span> Steven Manfro</a></li>
+					<li><a href="#player-info?player=paul-perkins"><span class="ui-li-count">#24</span> Paul Perkins</a></li>
 				</ul>
 			</div>
 		<a class="playerpos" href="#pop-z" data-rel="popup" id="pos-z">Z</a>
@@ -164,14 +157,15 @@
 				<h2>Z receiver</h2><br />
 				<ul data-role="listview">
 					<li><a href="#player-info?player=shaquelle-evans"><h1><span class="ui-li-count">#1</span> Shaquelle Evans</h1></a></li>
-					<li><a href="#player-info?player=jordan-payton"><span class="ui-li-count">#10</span> Jordan Payton</a></li>
-					<li><a href="#player-info?player=ricky-marvray"><span class="ui-li-count">#7</span> Ricky Marvray</a></li>
+					<li><a href="#player-info?player=logan-sweet"><span class="ui-li-count">#86</span> Logan Sweet</a></li>
+					<li><a href="#player-info?player=darren-andrews"><span class="ui-li-count">#4</span> Darren Andrews</a></li>
+					<li><a href="#player-info?player=tyler-scott"><span class="ui-li-count">#81</span> Tyler Scott</a></li>
 				</ul>
 			</div>
 	</div><!-- /content -->
 
 	<div data-role="footer">
-		<h4>&copy 2012 <a href="http://dailybruin.com">Daily Bruin</a>. <a href="http://graphics.dailybruin.com/football">Visit latest chart</a></h4>
+		<h4>&copy 2013 <a href="http://dailybruin.com">Daily Bruin</a></h4>
 	</div><!-- /footer -->
 </div><!-- /page -->
 
@@ -196,9 +190,9 @@
 			<div data-role="popup" data-overlay-theme="a" data-position-to="window" class="ui-content" id="pop-le">
 				<h2>Left end</h2><br />
 				<ul data-role="listview">
-					<li><a href="#player-info?player=datone-jones"><h1><span class="ui-li-count">#56</span> Datone Jones</h1></a></li>
-					<li><a href="#player-info?player=owamagbe-odighizuwa"><span class="ui-li-count">#94</span> Owamagbe Odighizuwa</a></li>
-					<li><a href="#player-info?player=ellis-mccarthy"><span class="ui-li-count">#93</span> Ellis McCarthy</a></li>
+					<li><a href="#player-info?player=keenan-graham"><h1><span class="ui-li-count">#40</span> Keenan Graham</h1></a></li>
+					<li><a href="#player-info?player=brandon-willis"><span class="ui-li-count">#92</span> Brandon Willis</a></li>
+					<li><a href="#player-info?player=eddie-vanderdoes"><span class="ui-li-count">#47</span> Eddie Vanderdoes</a></li>
 				</ul>
 			</div>
 		<a class="playerpos" href="#pop-nt" data-rel="popup" id="pos-nt">NT</a>
@@ -206,8 +200,8 @@
 				<h2>Nose tackle</h2><br />
 				<ul data-role="listview">
 					<li><a href="#player-info?player=sealii-epenesa"><h1><span class="ui-li-count">#98</span> Seali&rsquo;i Epenesa</h1></a></li>
-					<li><a href="#player-info?player=brandon-willis"><span class="ui-li-count">#92</span> Brandon Willis</a></li>
-					<li><a href="#player-info?player=donovan-carter"><span class="ui-li-count">#90</span> Donovan Carter</a></li>
+					<li><a href="#player-info?player=ellis-mccarthy"><span class="ui-li-count">#90</span> Ellis McCarthy</a></li>
+					<li><a href="#player-info?player=kenny-clark"><span class="ui-li-count">#97</span> Kenny Clark</a></li>
 				</ul>
 			</div>
 		<a class="playerpos" href="#pop-re" data-rel="popup" id="pos-re">RE</a>
@@ -215,17 +209,17 @@
 				<h2>Right end</h2><br />
 				<ul data-role="listview">
 					<li><a href="#player-info?player=cassius-marsh"><h1><span class="ui-li-count">#99</span> Cassius Marsh</h1></a></li>
-					<li><a href="#player-info?player=owamagbe-odighizuwa"><span class="ui-li-count">#94</span> Owamagbe Odighizuwa</a></li>
-					<li><a href="#player-info?player=brandon-willis"><span class="ui-li-count">#92</span> Brandon Willis</a></li>
+					<li><a href="#player-info?player=kylie-fitts"><span class="ui-li-count">#93</span> Kylie Fitts</a></li>
+					<li><a href="#player-info?player=eli-ankou"><span class="ui-li-count">#96</span> Eli Ankou</a></li>
 				</ul>
 			</div>
 		<a class="playerpos" href="#pop-lolb" data-rel="popup" id="pos-lolb">LOLB</a>
 			<div data-role="popup" data-overlay-theme="a" data-position-to="window" class="ui-content" id="pop-lolb">
 				<h2>Left outside linebacker</h2><br />
 				<ul data-role="listview">
-					<li><a href="#player-info?player=damien-holmes"><h1><span class="ui-li-count">#43</span> Damien Holmes</h1></a></li>
-					<li><a href="#player-info?player=jordan-zumwalt"><span class="ui-li-count">#35</span> Jordan Zumwalt</a></li>
-					<li><a href="#player-info?player=keenan-graham"><span class="ui-li-count">#40</span> Keenan Graham</a></li>
+					<li><a href="#player-info?player=aaron-wallace"><h1><span class="ui-li-count">#51</span> Aaron Wallace</h1></a></li>
+					<li><a href="#player-info?player=myles-jack"><span class="ui-li-count">#30</span> Myles Jack</a></li>
+					<li><a href="#player-info?player=deon-hollins"><span class="ui-li-count">#8</span> Deon Hollins</a></li>
 				</ul>
 			</div>
 		<a class="playerpos" href="#pop-lilb" data-rel="popup" id="pos-lilb">LILB</a>
@@ -233,7 +227,8 @@
 				<h2>Left inside linebacker</h2><br />
 				<ul data-role="listview">
 					<li><a href="#player-info?player=jordan-zumwalt"><h1><span class="ui-li-count">#35</span> Jordan Zumwalt</h1></a></li>
-					<li><a href="#player-info?player=dalton-hilliard"><span class="ui-li-count">#19</span> Dalton Hilliard</a></li>
+					<li><a href="#player-info?player=ryan-hofmeister"><span class="ui-li-count">#53</span> Ryan Hofmeister</a></li>
+					<li><a href="#player-info?player=taylor-lagace"><span class="ui-li-count">#28</span> Taylor Lagace</a></li>
 				</ul>
 			</div>
 		<a class="playerpos" href="#pop-rilb" data-rel="popup" id="pos-rilb">RILB</a>
@@ -241,8 +236,8 @@
 				<h2>Right inside linebacker</h2><br />
 				<ul data-role="listview">
 					<li><a href="#player-info?player=eric-kendricks"><h1><span class="ui-li-count">#6</span> Eric Kendricks</h1></a></li>
-					<li><a href="#player-info?player=ryan-hofmeister"><span class="ui-li-count">#33</span> Ryan Hofmeister</a></li>
-					<li><a href="#player-info?player=kenny-orjioke"><span class="ui-li-count">#23</span> Kenny Orjioke</a></li>
+					<li><a href="#player-info?player=isaako-savaiinaea"><span class="ui-li-count">#44</span> Isaako Savaiinaea</a></li>
+					<li><a href="#player-info?player=isaiah-bowens"><span class="ui-li-count">#55</span> Isaiah Bowens</a></li>
 				</ul>
 			</div>
 		<a class="playerpos" href="#pop-rolb" data-rel="popup" id="pos-rolb">ROLB</a>
@@ -250,48 +245,50 @@
 				<h2>Right outside linebacker</h2><br />
 				<ul data-role="listview">
 					<li><a href="#player-info?player=anthony-barr"><h1><span class="ui-li-count">#11</span> Anthony Barr</h1></a></li>
-					<li><a href="#player-info?player=keenan-graham"><span class="ui-li-count">#40</span> Keenan Graham</a></li>
-					<li><a href="#player-info?player=aaron-wallace"><span class="ui-li-count">#12</span> Aaron Wallace</a></li>
+					<li><a href="#player-info?player=kenny-orjioke"><span class="ui-li-count">#46</span> Kenny Orjioke</a></li>
+					<li><a href="#player-info?player=aramide-olaniyan"><span class="ui-li-count">#41</span> Aramide Olaniyan</a></li>
 				</ul>
 			</div>
 		<a class="playerpos" href="#pop-lcb" data-rel="popup" id="pos-lcb">LCB</a>
 			<div data-role="popup" data-overlay-theme="a" data-position-to="window" class="ui-content" id="pop-lcb">
 				<h2>Left cornerback</h2><br />
 				<ul data-role="listview">
-					<li><a href="#player-info?player=sheldon-price"><h1><span class="ui-li-count">#22</span> Sheldon Price</h1></a></li>
-					<li><a href="#player-info?player=fabian-moreau"><span class="ui-li-count">#10</span> Fabian Moreau</a></li>
+					<li><a href="#player-info?player=fabian-moreau"><h1><span class="ui-li-count">#10</span> Fabian Moreau</h1></a></li>
+					<li><a href="#player-info?player=brandon-sermons"><span class="ui-li-count">#25</span> Brandon Sermons</a></li>
+					<li><a href="#player-info?player=charles-dawson"><span class="ui-li-count">#18</span> Charles Dawson</a></li>
 				</ul>
 			</div>
 		<a class="playerpos" href="#pop-rcb" data-rel="popup" id="pos-rcb">RCB</a>
 			<div data-role="popup" data-overlay-theme="a" data-position-to="window" class="ui-content" id="pop-rcb">
 				<h2>Right cornerback</h2><br />
 				<ul data-role="listview">
-					<li><a href="#player-info?player=aaron-hester"><h1><span class="ui-li-count">#21</span> Aaron Hester</h1></a></li>
-					<li><a href="#player-info?player=marcus-rios"><span class="ui-li-count">#9</span> Marcus Rios</a></li>
-					<li><a href="#player-info?player=randall-goforth"><span class="ui-li-count">#3</span> Randall Goforth</a></li>
+					<li><a href="#player-info?player=ishmael-adams"><h1><span class="ui-li-count">#24</span> Ishmael Adams</h1></a></li>
+					<li><a href="#player-info?player=priest-willis"><span class="ui-li-count">#2</span> Priest Willis</a></li>
+					<li><a href="#player-info?player=justin-combs"><span class="ui-li-count">#20</span> Justin Combs</a></li>
 				</ul>
 			</div>
 		<a class="playerpos" href="#pop-ss" data-rel="popup" id="pos-ss">SS</a>
 			<div data-role="popup" data-overlay-theme="a" data-position-to="window" class="ui-content" id="pop-ss">
 				<h2>Strong safety</h2><br />
 				<ul data-role="listview">
-					<li><a href="#player-info?player=andrew-abbott"><h1><span class="ui-li-count">#26</span> Andrew Abbott</h1></a></li>
-					<li><a href="#player-info?player=randall-goforth"><span class="ui-li-count">#3</span> Randall Goforth</a></li>
+					<li><a href="#player-info?player=anthony-jefferson"><h1><span class="ui-li-count">#23</span> Anthony Jefferson</h1></a></li>
+					<li><a href="#player-info?player=tahaan-goodman"><span class="ui-li-count">#21</span> Tahaan Goodman</a></li>
+					<li><a href="#player-info?player=jayon-brown"><span class="ui-li-count">#19</span> Jayon Brown</a></li>
 				</ul>
 			</div>
 		<a class="playerpos" href="#pop-fs" data-rel="popup" id="pos-fs">FS</a>
 			<div data-role="popup" data-overlay-theme="a" data-position-to="window" class="ui-content" id="pop-fs">
 				<h2>Free safety</h2><br />
 				<ul data-role="listview">
-					<li><a href="#player-info?player=tevin-mcdonald"><h1><span class="ui-li-count">#7</span> Tevin McDonald</h1></a></li>
+					<li><a href="#player-info?player=randall-goforth"><h1><span class="ui-li-count">#3</span> Randall Goforth</h1></a></li>
 					<li><a href="#player-info?player=stan-mckay"><span class="ui-li-count">#4</span> Stan McKay</a></li>
-					<li><a href="#player-info?player=brandon-sermons"><span class="ui-li-count">#2</span> Brandon Sermons</a></li>
+					<li><a href="#player-info?player=tyler-foreman"><span class="ui-li-count">#22</span> Tyler Foreman</a></li>
 				</ul>
 			</div>
 	</div><!-- /content -->
 
 	<div data-role="footer">
-		<h4>&copy 2012 <a href="http://dailybruin.com">Daily Bruin</a>. <a href="http://graphics.dailybruin.com/football">Visit latest chart</a></h4>
+		<h4>&copy 2013 <a href="http://dailybruin.com">Daily Bruin</a></h4>
 	</div><!-- /footer -->
 </div><!-- /page -->
 
@@ -313,53 +310,53 @@
 			<li>Place kicker
 				<ul data-role="listview">
 					<li><a href="#player-info?player=kaimi-fairbairn"><span class="ui-li-count">#15</span> Ka'imi Fairbairn</a></li>
-					<li><a href="#player-info?player=justin-moreno"><span class="ui-li-count">#17</span> Justin Moreno</a></li>
+					<li><a href="#player-info?player=mitch-johnson"><span class="ui-li-count">#98</span> Mitch Johnson</a></li>
 				</ul>
 			</li>
 			<li>Kickoff
 				<ul data-role="listview">
-					<li><a href="#player-info?player=jeff-locke"><span class="ui-li-count">#18</span> Jeff Locke</a></li>
-					<li><a href="#player-info?player=kaimi-fairbairn"><span class="ui-li-count">#15</span> Ka'imi Fairbairn</a></li>
+					<li><a href="#player-info?player=kaimi-fairbairn"><span class="ui-li-count">#15</span> Ka’imi Fairbairn</a></li>
+					<li><a href="#player-info?player=sean-covington"><span class="ui-li-count">#19</span> Sean Covington</a></li>
 				</ul>
 			</li>
 			<li>Punter
 				<ul data-role="listview">
-					<li><a href="#player-info?player=jeff-locke"><span class="ui-li-count">#18</span> Jeff Locke</a></li>
-					<li><a href="#player-info?player=justin-moreno"><span class="ui-li-count">#17</span> Justin Moreno</a></li>
+					<li><a href="#player-info?player=sean-covington"><span class="ui-li-count">#19</span> Sean Covington</a></li>
+					<li><a href="#player-info?player=adam-searl"><span class="ui-li-count">#39</span> Adam Searl</a></li>
 				</ul>
 			</li>
 			<li>Long snapper
 				<ul data-role="listview">
-					<li><a href="#player-info?player=kevin-mcdermott"><span class="ui-li-count">#48</span> Kevin McDermott</a></li>
-					<li><a href="#player-info?player=christopher-longo"><span class="ui-li-count">#53</span> Christopher Longo</a></li>
+					<li><a href="#player-info?player=christopher-longo"><span class="ui-li-count">#59</span> Christopher Longo</a></li>
 				</ul>
 			</li>
 			<li>Holder
 				<ul data-role="listview">
-					<li><a href="#player-info?player=jeff-locke"><span class="ui-li-count">#18</span> Jeff Locke</a></li>
 					<li><a href="#player-info?player=jerry-neuheisel"><span class="ui-li-count">#11</span> Jerry Neuheisel</a></li>
 				</ul>
 			</li>
 			<li>Punt return
 				<ul data-role="listview">
+					<li><a href="#player-info?player=shaquelle-evan"><span class="ui-li-count">#1</span> Shaquelle Evan</a></li>
+					<li><a href="#player-info?player=devin-fuller"><span class="ui-li-count">#7</span> Devin Fuller</a></li>
 					<li><a href="#player-info?player=steven-manfro"><span class="ui-li-count">#33</span> Steven Manfro</a></li>
-					<li><a href="#player-info?player=andrew-abbott"><span class="ui-li-count">#26</span> Andrew Abbott</a></li>
-					<li><a href="#player-info?player=jordan-james"><span class="ui-li-count">#6</span> Jordon James</a></li>
+					<li><a href="#player-info?player=randall-goforth"><span class="ui-li-count">#3</span> Randall Goforth </a></li>
+					<li><a href="#player-info?player=ishmael-adams"><span class="ui-li-count">#24</span> Ishmael Adams</a></li>
 				</ul>
 			</li>
 			<li>Kickoff return
 				<ul data-role="listview">
 					<li><a href="#player-info?player=steven-manfro"><span class="ui-li-count">#33</span> Steven Manfro</a></li>
-					<li><a href="#player-info?player=jordon-james"><span class="ui-li-count">#6</span> Jordon James</a></li>
-					<li><a href="#player-info?player=damien-thigpen"><span class="ui-li-count">#25</span> Damien Thigpen</a></li>
-					<li><a href="#player-info?player=johnathan-franklin"><span class="ui-li-count">#23</span> Johnathan Franklin</a></li>
+					<li><a href="#player-info?player=paul-perkins"><span class="ui-li-count">#24</span> Paul Perkins</a></li>
+					<li><a href="#player-info?player=myles-jack"><span class="ui-li-count">#55</span> Myles Jack</a></li>
+					<li><a href="#player-info?player=roosevelt-davis"><span class="ui-li-count">#22</span> Roosevelt Davis</a></li>
 				</ul>
 			</li>
 		</ul>
 	</div><!-- /content -->
 
 	<div data-role="footer">
-		<h4>&copy 2012 <a href="http://dailybruin.com">Daily Bruin</a>. <a href="http://graphics.dailybruin.com/football">Visit latest chart</a></h4>
+		<h4>&copy 2013 <a href="http://dailybruin.com">Daily Bruin</a></h4>
 	</div><!-- /footer -->
 </div><!-- /page -->
 
@@ -375,7 +372,7 @@
 	</div><!-- /content -->
 
 	<div data-role="footer">
-		<h4>&copy 2012 <a href="http://dailybruin.com">Daily Bruin</a></h4>
+		<h4>&copy 2013 <a href="http://dailybruin.com">Daily Bruin</a></h4>
 	</div><!-- /footer -->
 </div><!-- /page -->
 
