@@ -58,8 +58,8 @@ function showPlayer( urlObj, options )
 	// Because of Javascript's callback structure, the rest of the
 	// showPlayer function must be within this callback
 	$.get('player-data.json', function(data) {
-		// Get and parse the JSON with player data
-		playerInfo = $.parseJSON(data);
+		// Get the JSON with player data
+        playerInfo = data;
 		playerObj = getPlayer(playerInfo, playerName);
 		
 		// Extract first and last name from input string
