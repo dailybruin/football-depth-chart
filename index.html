@@ -16,6 +16,13 @@
 			$.mobile.page.prototype.options.addBackBtn = true;
 			$.mobile.changePage.defaults.transition = 'slide';
 		});
+        
+        // Prompt to visit new version
+        $(document).ready(function(){
+            var r = confirm("This chart is not being updated. Visit the newest chart?");
+            if (r == true)
+                window.location="graphics.dailybruin.com/football";
+        });        
 	</script>
 	<script src="http://code.jquery.com/mobile/1.2.0-alpha.1/jquery.mobile-1.2.0-alpha.1.min.js"></script>
 	<script src="jquery-hashchange.min.js"></script>
@@ -38,11 +45,11 @@
 	</script>
 </head> 
 <body> 
-
+    
 <div data-role="page" id="offense" data-add-back-btn="false">
 
 	<div data-role="header">
-		<h1>Depth chart</h1>
+		<h1>2012 Depth chart</h1>
 		<div data-role="navbar">
 			<ul>
 				<li><a href="#offense" data-transition="none" class="ui-btn-active ui-state-persist">Offense</a></li>
@@ -164,7 +171,7 @@
 	</div><!-- /content -->
 
 	<div data-role="footer">
-		<h4>&copy 2012 <a href="http://dailybruin.com">Daily Bruin</a></h4>
+		<h4>&copy 2012 <a href="http://dailybruin.com">Daily Bruin</a>. <a href="http://graphics.dailybruin.com/football">Visit latest chart</a></h4>
 	</div><!-- /footer -->
 </div><!-- /page -->
 
@@ -284,7 +291,7 @@
 	</div><!-- /content -->
 
 	<div data-role="footer">
-		<h4>&copy 2012 <a href="http://dailybruin.com">Daily Bruin</a></h4>
+		<h4>&copy 2012 <a href="http://dailybruin.com">Daily Bruin</a>. <a href="http://graphics.dailybruin.com/football">Visit latest chart</a></h4>
 	</div><!-- /footer -->
 </div><!-- /page -->
 
@@ -352,11 +359,9 @@
 	</div><!-- /content -->
 
 	<div data-role="footer">
-		<h4>&copy 2012 <a href="http://dailybruin.com">Daily Bruin</a></h4>
+		<h4>&copy 2012 <a href="http://dailybruin.com">Daily Bruin</a>. <a href="http://graphics.dailybruin.com/football">Visit latest chart</a></h4>
 	</div><!-- /footer -->
 </div><!-- /page -->
-
-
 
 <div data-role="page" id="player-info" data-add-back-btn="true">
 
