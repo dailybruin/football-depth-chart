@@ -57,7 +57,7 @@ function showPlayer( urlObj, options )
 	
 	// Because of Javascript's callback structure, the rest of the
 	// showPlayer function must be within this callback
-	$.get('player-data.json', function(data) {
+	$.get('player-data.json?time=1377778882', function(data) {
 		// Get the JSON with player data
         playerInfo = data;
 		playerObj = getPlayer(playerInfo, playerName);
